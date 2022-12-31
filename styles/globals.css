@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  min-height: 100vh;
+  background-color: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
