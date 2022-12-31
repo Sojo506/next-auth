@@ -48,9 +48,13 @@ export default function Home() {
             <h2 className="font-bold">{session.user.name}</h2>
             <p className="">{session.user.email}</p>
             <p className="">
-              "But I must explain to you how all this mistak..."
+              {`&quot;`}But I must explain to you how all this mistak...
+              {`&quot;`}
             </p>
-            <button className="bg-yellow-400 transition duration-200 ease-in transform hover:bg-[#333] hover:text-white" onClick={() => router.push('/api/auth/signout')}>
+            <button
+              className="bg-yellow-400 transition duration-200 ease-in transform hover:bg-[#333] hover:text-white"
+              onClick={() => router.push("/api/auth/signout")}
+            >
               Sign Out
             </button>
           </div>
